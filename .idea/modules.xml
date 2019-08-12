@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Flume/Flume.iml" filepath="$PROJECT_DIR$/Flume/Flume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hive/Hive.iml" filepath="$PROJECT_DIR$/Hive/Hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kafka/Kafka.iml" filepath="$PROJECT_DIR$/Kafka/Kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/etl/etl.iml" filepath="$PROJECT_DIR$/etl/etl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flume-0508/flume-0508.iml" filepath="$PROJECT_DIR$/flume-0508/flume-0508.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-0508/kafka-0508.iml" filepath="$PROJECT_DIR$/kafka-0508/kafka-0508.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapReduce/mapreduce.iml" filepath="$PROJECT_DIR$/MapReduce/mapreduce.iml" />
+    </modules>
+  </component>
+</project>
