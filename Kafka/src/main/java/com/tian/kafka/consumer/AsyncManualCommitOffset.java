@@ -24,7 +24,7 @@ public class AsyncManualCommitOffset {
                 StringDeserializer.class.getName());
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
                 StringDeserializer.class.getName());
-        KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
+        KafkaConsumer<String, String> consumer = new KafkaConsumer<String,String>(props);
         consumer.subscribe(Arrays.asList("first"));
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(100);
@@ -33,10 +33,9 @@ public class AsyncManualCommitOffset {
                         "key:" + record.key() + "value" + record.value());
             }
             consumer.commitAsync(new OffsetCommitCallback() {
-                @Override
                 public void onComplete(Map<TopicPartition, OffsetAndMetadata> map, Exception e) {
                     if (e != null)
-                        System.out.println("Commit failed for" + map);
+                        System.out.println("commit failed for " + map);
                 }
             });//异步提交
         }
