@@ -52,6 +52,7 @@ public class HBaseUtil {
         //判断表是否已经存在
         if (admin.tableExists(TableName.valueOf(tableName))) {
             System.err.println("table " + tableName + " was already exists!");
+            admin.close();
             return;
         }
         HTableDescriptor tableDesc = new HTableDescriptor(TableName.valueOf(tableName));
@@ -77,6 +78,7 @@ public class HBaseUtil {
         //判断表是否不存在
         if (!admin.tableExists(TableName.valueOf(tableName))) {
             System.err.println("table " + tableName + " does not exists!");
+            admin.close();
             return;
         }
         HColumnDescriptor familyDesc = new HColumnDescriptor(family);
@@ -95,6 +97,7 @@ public class HBaseUtil {
         //判断表是否不存在
         if (!admin.tableExists(TableName.valueOf(tableName))) {
             System.err.println("table " + tableName + " does not exists!");
+            admin.close();
             return;
         }
         admin.disableTable(TableName.valueOf(tableName)); //删除之前先disable
@@ -129,6 +132,7 @@ public class HBaseUtil {
         //判断表是否不存在
         if (!admin.tableExists(TableName.valueOf(tableName))) {
             System.err.println("table " + tableName + " does not exists!");
+            admin.close();
             return;
         }
         HTableDescriptor tableDescriptor = admin.getTableDescriptor(TableName.valueOf(tableName));
