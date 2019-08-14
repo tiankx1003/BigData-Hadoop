@@ -304,7 +304,7 @@ public class HBaseUtil {
 //        dropTable("class");
 //        listTables();
 //        descTable("class"); //TODO 待补充
-//        putCell("class", "1001", "info", "name", "0508");ZzZZZ
+//        putCell("class", "1001", "info", "name", "0508");
 //        getRow("class","1001");
 //        getRowsByRowRange("student","1001","1004");
 //        getRowByColumn("student", "info", "name", "zs");
