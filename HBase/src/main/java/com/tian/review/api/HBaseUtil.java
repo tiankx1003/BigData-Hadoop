@@ -200,14 +200,15 @@ public class HBaseUtil {
 
     /**
      * 通过多个filter过滤后查询数据
+     *
      * @param tableName
      * @param family
      * @param column
-     * @param value1 过滤条件1
-     * @param value2 过滤条件2
+     * @param value1    过滤条件1
+     * @param value2    过滤条件2
      * @throws IOException
      */
-    public static void getRowByFilterList(String tableName,String family,String column,String value1,String value2) throws IOException {
+    public static void getRowByFilterList(String tableName, String family, String column, String value1, String value2) throws IOException {
         Table table = connection.getTable(TableName.valueOf(tableName));
         Scan scan = new Scan();
         SingleColumnValueFilter filter1 = new SingleColumnValueFilter(Bytes.toBytes(family), Bytes.toBytes(column), CompareFilter.CompareOp.NOT_EQUAL, Bytes.toBytes(value1));
@@ -230,12 +231,39 @@ public class HBaseUtil {
         table.close();
     }
 
-    public static void deleteRow(String tableName,String rowkey) throws IOException {
+    /**
+     * 删除一行数据
+     *
+     * @param tableName
+     * @param rowkey
+     * @throws IOException
+     */
+    public static void deleteRow(String tableName, String rowkey) throws IOException {
         Table table = connection.getTable(TableName.valueOf(tableName));
-        new Delete(Bytes.toBytes(rowkey));
-//        table.delete(delete); TODO
+        Delete delete = new Delete(Bytes.toBytes(rowkey));
+        table.delete(delete);
+        table.close();
     }
 
+    /**
+     * 删除列
+     * 最新版本
+     * 指定时间戳可删除指定版本的数据
+     * @param tableName
+     * @param rowKey
+     * @param family
+     * @param column
+     * @throws IOException
+     */
+    public static void delete(String tableName,String rowKey,
+                              String family,String column) throws IOException {
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        Delete delete = new Delete(Bytes.toBytes(rowKey));
+        delete.addColumn(Bytes.toBytes(family),Bytes.toBytes(column));//删除最新版本
+        delete.addColumn(Bytes.toBytes(family),Bytes.toBytes(column),
+                new Long(10000)); //删除指定时间戳对应版本的数据
+        table.delete(delete);
+    }
 
     public static void main(String[] args) throws IOException {
 //        createTable("class","info");
@@ -246,6 +274,7 @@ public class HBaseUtil {
 //        getRow("class", "1001");
 //        getRowSByRowRange("student", "1001", "1002!");
 //        getRowByFilter("student","info","name","ww");
-        getRowByFilterList("student","main","1001","ls","ww");
+//        getRowByFilterList("student", "main", "1001", "ls", "ww");
+        deleteRow("student","1003");
     }
 }
