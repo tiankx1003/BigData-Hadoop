@@ -18,8 +18,13 @@ public class WeiboDao {
     public static Connection connection = null;
 
     static {
-        Configuration conf = HBaseConfiguration.create();
-
+        try {
+            Configuration conf = HBaseConfiguration.create();
+            conf.set("hadoop.zookeeper.quorum","hadoop101,hadoop102,hadoop103");
+            connection = ConnectionFactory.createConnection(conf);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -53,8 +58,9 @@ public class WeiboDao {
         }
         HTableDescriptor tableDesc = new HTableDescriptor(TableName.valueOf(tableName));
         for (String family : families) {
-            HColumnDescriptor columnDesc = new HColumnDescriptor(family);
-            //TODO versions
+            HColumnDescriptor familyDesc = new HColumnDescriptor(family);
+            familyDesc.setMaxVersions(versions);
+            tableDesc.addFamily(familyDesc);
         }
         admin.createTable(tableDesc);
         admin.close();
@@ -89,7 +95,6 @@ public class WeiboDao {
             put.addColumn(Bytes.toBytes(family), Bytes.toBytes(column), Bytes.toBytes(rowKey));
         }
         table.put(puts);
-
         table.close();
     }
 }
