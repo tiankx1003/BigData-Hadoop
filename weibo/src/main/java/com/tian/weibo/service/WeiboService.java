@@ -16,15 +16,11 @@ public class WeiboService {
 
     private WeiboDao dao = new WeiboDao();
 
-    //1) 创建命名空间以及表名的定义
-    //2) 创建微博内容表
-    //3) 创建用户关系表
-    //4) 创建用户微博内容接收邮件表
     public void init() throws IOException {
         dao.createNameSpace(Names.NAMESPACE_WEIBO);
-        dao.createTable(Names.TABLE_WEIBO);
-        dao.createTable(Names.TABLE_RELATION);
-        dao.createTable(Names.TABLE_INBOX);
+        dao.createTable(Names.TABLE_WEIBO,Names.WEIBO_FAMILY_DATA);
+        dao.createTable(Names.TABLE_RELATION,Names.RELATION_FAMILY_DATA);
+        dao.createTable(Names.TABLE_INBOX,Names.INBOX_FAMILY_DATA);
     }
 
     //发微博

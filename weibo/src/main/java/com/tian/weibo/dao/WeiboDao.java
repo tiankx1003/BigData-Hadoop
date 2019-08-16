@@ -45,6 +45,12 @@ public class WeiboDao {
         }
     }
 
+    /**
+     * 创建表
+     * @param tableName
+     * @param families
+     * @throws IOException
+     */
     public void createTable(String tableName, String... families) throws IOException {
         createTable(tableName, 1, families);
     }
