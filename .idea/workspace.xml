@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="451ad812-7e72-497a-9a43-56e9dfbdd186" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/.idea/dictionaries/lbo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/JARVIS.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/src/main/java/WeiboAPP.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/constant/Names.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/controller/WeiboController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/dao/WeiboDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/service/WeiboService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/target/classes/WeiboAPP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/target/classes/constant/Names.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/target/classes/controller/WeiboController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/target/classes/dao/WeiboDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/target/classes/service/WeiboService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/weibo-0508.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="451ad812-7e72-497a-9a43-56e9dfbdd186" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/FlowCount/target/" />
     <ignored path="$PROJECT_DIR$/MapReduce/target/" />
@@ -161,7 +140,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="406" />
+    <option name="x" value="405" />
     <option name="y" value="230" />
     <option name="width" value="1455" />
     <option name="height" value="995" />
@@ -177,7 +156,43 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,7 +240,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="184" y="44" width="318" height="745" id="Project" order="0" sideWeight="0.49933067" visible="true" weight="0.2600536" />
+      <window_info active="true" content_ui="combo" x="184" y="44" width="318" height="745" id="Project" order="0" sideWeight="0.49933067" visible="true" weight="0.26340482" />
       <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.50066936" side_tool="true" weight="0.16957104" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" show_stripe_button="false" sideWeight="0.50066936" side_tool="true" weight="0.16957104" />
@@ -247,7 +262,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info active="true" anchor="right" auto_hide="true" x="491" y="43" width="554" height="747" id="Maven" order="5" type="SLIDING" visible="true" weight="0.6508043" />
+      <window_info anchor="right" auto_hide="true" x="491" y="43" width="554" height="747" id="Maven" order="5" type="SLIDING" weight="0.6508043" />
       <window_info anchor="right" id="SciView" order="6" weight="0.32931355" />
       <window_info anchor="right" id="Terminal" order="7" side_tool="true" weight="0.42627347" />
     </layout>
