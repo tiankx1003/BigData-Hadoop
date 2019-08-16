@@ -10,7 +10,6 @@
         <option value="$PROJECT_DIR$/etl/pom.xml" />
         <option value="$PROJECT_DIR$/MapReduce/pom.xml" />
         <option value="$PROJECT_DIR$/HBase/pom.xml" />
-        <option value="$PROJECT_DIR$/weibo-0508/pom.xml" />
         <option value="$PROJECT_DIR$/weibo/pom.xml" />
       </list>
     </option>

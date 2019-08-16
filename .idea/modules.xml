@@ -11,7 +11,6 @@
       <module fileurl="file://$PROJECT_DIR$/kafka-0508/kafka-0508.iml" filepath="$PROJECT_DIR$/kafka-0508/kafka-0508.iml" />
       <module fileurl="file://$PROJECT_DIR$/MapReduce/mapreduce.iml" filepath="$PROJECT_DIR$/MapReduce/mapreduce.iml" />
       <module fileurl="file://$PROJECT_DIR$/weibo/weibo.iml" filepath="$PROJECT_DIR$/weibo/weibo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/weibo-0508/weibo-0508.iml" filepath="$PROJECT_DIR$/weibo-0508/weibo-0508.iml" />
     </modules>
   </component>
 </project>
