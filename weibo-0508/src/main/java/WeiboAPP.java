@@ -1,4 +1,4 @@
-import controller.WeiboController;
+import com.tian.weibo.controller.WeiboController;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,23 +9,23 @@ public class WeiboAPP {
 
     public static void main(String[] args) throws IOException {
 
-//        controller.init();
+//        com.tian.weibo.controller.init();
 
-//        controller.follow("1001","1002");
-//        controller.follow("1001","1003");
-//        controller.follow("1001","1004");
+//        com.tian.weibo.controller.follow("1001","1002");
+//        com.tian.weibo.controller.follow("1001","1003");
+//        com.tian.weibo.controller.follow("1001","1004");
 
-//        controller.unFollow("1001","1004");
+//        com.tian.weibo.controller.unFollow("1001","1004");
 
-//        controller.publish("1002", "happy 10.1");
-//        controller.publish("1002", "happy 10.2");
-//        controller.publish("1002", "happy 10.3");
-//        controller.publish("1002", "happy 10.4");
-//        controller.publish("1002", "happy 10.5");
-//        controller.publish("1002", "happy 10.6");
-//        controller.publish("1002", "happy 10.7");
+//        com.tian.weibo.controller.publish("1002", "happy 10.1");
+//        com.tian.weibo.controller.publish("1002", "happy 10.2");
+//        com.tian.weibo.controller.publish("1002", "happy 10.3");
+//        com.tian.weibo.controller.publish("1002", "happy 10.4");
+//        com.tian.weibo.controller.publish("1002", "happy 10.5");
+//        com.tian.weibo.controller.publish("1002", "happy 10.6");
+//        com.tian.weibo.controller.publish("1002", "happy 10.7");
 
-//        List<String> weibos = controller.getWeibosByStarId("1002");
+//        List<String> weibos = com.tian.weibo.controller.getWeibosByStarId("1002");
 //        if (weibos.size() >= 1) {
 //            for (String weibo : weibos) {
 //                System.out.println("weibo = " + weibo);

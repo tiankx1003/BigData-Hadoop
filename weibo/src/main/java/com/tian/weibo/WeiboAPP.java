@@ -1,3 +1,5 @@
+package com.tian.weibo;
+
 /**
  * @author JARVIS
  * @version 1.0

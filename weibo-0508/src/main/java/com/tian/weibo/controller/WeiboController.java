@@ -1,7 +1,7 @@
-package controller;
+package com.tian.weibo.controller;
 
-import constant.Names;
-import service.WeiboService;
+import com.tian.weibo.constant.Names;
+import com.tian.weibo.service.WeiboService;
 
 import java.io.IOException;
 import java.util.List;

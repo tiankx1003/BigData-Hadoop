@@ -1,9 +1,8 @@
-package service;
+package com.tian.weibo.service;
 
-import constant.Names;
-import dao.WeiboDao;
+import com.tian.weibo.constant.Names;
+import com.tian.weibo.dao.WeiboDao;
 
-import javax.naming.Name;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
