@@ -35,7 +35,7 @@ public class WeiboController {
 
     //关注
     public void follow(String fans, String star) {
-
+        service.follow(fans,star);
     }
 
     //取关

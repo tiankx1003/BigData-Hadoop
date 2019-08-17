@@ -21,6 +21,6 @@ public class Names {
     public static final String WEIBO_COLUMN_CONTENT = "content";
     public static final String RELATION_COLUMN_TIME = "time";
 
-    public static final String INBOX_VERSIONS = "3";
+    public static final int INBOX_VERSIONS = 3;
 
 }

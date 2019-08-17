@@ -74,7 +74,10 @@ public class WeiboDao {
 
     public void putCell(String tableName, String rowKey, String family, String column, String value) throws IOException {
         Table table = connection.getTable(TableName.valueOf(tableName));
-
+        Put put = new Put(Bytes.toBytes(rowKey));
+        put.addColumn(Bytes.toBytes(family),Bytes.toBytes(column),Bytes.toBytes(value));
+        table.put(put);
+        table.close();
     }
 
     public List<String> getRowKeysByPrefix(String tableName, String prefix) throws IOException {
@@ -98,9 +101,31 @@ public class WeiboDao {
         List<Put> puts = new ArrayList<>();
         for (String rowKey : rowKeys) {
             Put put = new Put(Bytes.toBytes(rowKey));
-            put.addColumn(Bytes.toBytes(family), Bytes.toBytes(column), Bytes.toBytes(rowKey));
+            put.addColumn(Bytes.toBytes(family), Bytes.toBytes(column), Bytes.toBytes(value));
         }
         table.put(puts);
         table.close();
+    }
+
+    /**
+     * 通过范围获取rowKey
+     * @param tableName
+     * @param startRow
+     * @param stopRow
+     * @return
+     * @throws IOException
+     */
+    public List<String> getRowKeyesByRange(String tableName,String startRow, String stopRow) throws IOException {
+        List<String> rowKeys = new ArrayList<>();
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        Scan scan = new Scan(Bytes.toBytes(startRow),Bytes.toBytes(stopRow));
+        ResultScanner scanner = table.getScanner(scan);
+        for (Result result : scanner) {
+            byte[] row = result.getRow();
+            rowKeys.add(Bytes.toString(row));
+        }
+        scanner.close();
+        table.close();
+        return null;
     }
 }

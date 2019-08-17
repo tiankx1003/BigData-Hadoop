@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="451ad812-7e72-497a-9a43-56e9dfbdd186" name="Default Changelist" comment="" />
+    <list default="true" id="451ad812-7e72-497a-9a43-56e9dfbdd186" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/HBase-Compile.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/AbstractHBaseKeyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/AbstractHBaseKeyPredicateDecomposer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/ColumnMappings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/CompositeHBaseKeyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/DataInputInputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/DataOutputOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/DefaultHBaseKeyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseCompositeKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseKeyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseLazyObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseRowSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseScanRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseSerDe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseSerDeHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseSerDeParameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseSplit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseStatsAggregator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseStatsPublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseStatsSetupConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseStatsUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseStorageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HBaseTableSnapshotInputFormatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HiveHBaseInputFormatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HiveHBaseTableInputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HiveHBaseTableOutputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HiveHBaseTableSnapshotInputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/HiveHFileOutputFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/LazyHBaseCellMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/LazyHBaseRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/PutWritable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/ResultWritable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/struct/AvroHBaseValueFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/struct/DefaultHBaseValueFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/struct/HBaseStructValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/struct/HBaseValueFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/struct/StructHBaseValueFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python/Python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scala/Scala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etl/etl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/etl/etl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/FlowCount/target/" />
     <ignored path="$PROJECT_DIR$/MapReduce/target/" />
@@ -65,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Kafka/src/main/java/com/tian/kafka/consumer/AsyncConsumer.java" />
         <option value="$PROJECT_DIR$/Kafka/src/main/java/com/tian/kafka/consumer/SyncConsumer.java" />
         <option value="$PROJECT_DIR$/Kafka/src/main/java/com/tian/kafka/consumer/AsyncProducer.java" />
         <option value="$PROJECT_DIR$/Kafka/src/main/java/com/tian/kafka/consumer/AsycProducer.java" />
@@ -109,13 +157,14 @@
         <option value="$PROJECT_DIR$/weibo/pom.xml" />
         <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao.java" />
         <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/Dao.java" />
-        <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java" />
         <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/Controller.java" />
         <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/WeiboAPP.java" />
         <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/Service.java" />
         <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/Dao.java" />
-        <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" />
+        <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java" />
         <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" />
+        <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java" />
+        <option value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" />
       </list>
     </option>
   </component>
@@ -139,9 +188,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="405" />
-    <option name="y" value="230" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="106" />
+    <option name="y" value="66" />
     <option name="width" value="1455" />
     <option name="height" value="995" />
   </component>
@@ -155,50 +204,16 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BigData" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weibo-0508" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowTODO.ShowToolbar" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/weibo-0508/pom.xml" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
+    <property name="last_opened_file_path" value="D:/feiq/File/08_HBase/2.资料/hive编译/lib/zookeeper-3.4.6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -206,10 +221,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="MarkdownNavigator.Settings.Preview" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git\BigData\HBase-Compile\src" />
+      <recent name="E:\Git\BigData\Compile\src" />
       <recent name="E:\Git\BigData\weibo\src\main\resources" />
     </key>
   </component>
@@ -238,9 +255,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="85" y="53" width="1164" height="796" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" x="184" y="44" width="318" height="745" id="Project" order="0" sideWeight="0.49933067" visible="true" weight="0.26340482" />
+      <window_info active="true" content_ui="combo" x="184" y="44" width="318" height="745" id="Project" order="0" sideWeight="0.49933067" visible="true" weight="0.3562387" />
       <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.50066936" side_tool="true" weight="0.16957104" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" show_stripe_button="false" sideWeight="0.50066936" side_tool="true" weight="0.16957104" />
@@ -264,7 +281,7 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" auto_hide="true" x="491" y="43" width="554" height="747" id="Maven" order="5" type="SLIDING" weight="0.6508043" />
       <window_info anchor="right" id="SciView" order="6" weight="0.32931355" />
-      <window_info anchor="right" id="Terminal" order="7" side_tool="true" weight="0.42627347" />
+      <window_info anchor="right" id="Terminal" order="7" side_tool="true" weight="0.42585894" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,40 +347,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit weibo" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-common/1.3.1/hbase-common-1.3.1.jar!/org/apache/hadoop/hbase/io/ImmutableBytesWritable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="24" column="65" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBase/src/main/java/com/tian/hbase/mr/WriteReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.3.1/hbase-client-1.3.1.jar!/org/apache/hadoop/hbase/client/Delete.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="175" column="78" selection-start-line="175" selection-start-column="69" selection-end-line="175" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HBase/src/main/java/com/tian/hbase/mr2/ReadMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HBase/src/main/java/com/tian/review/api.java" />
     <entry file="file://$PROJECT_DIR$/HBase/src/main/java/com/tian/hbase/mr2/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -556,27 +539,10 @@
     <entry file="file://$PROJECT_DIR$/weibo/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/controller/WeiboController.java" />
+    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/dao/WeiboDao.java" />
+    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/constant/Names.java" />
+    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/service/WeiboService.java" />
     <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/WeiboAPP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -586,15 +552,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="627">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding>
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/controller/WeiboController.java" />
-    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/dao/WeiboDao.java" />
-    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/constant/Names.java" />
-    <entry file="file://$PROJECT_DIR$/weibo-0508/src/main/java/com/tian/weibo/service/WeiboService.java" />
+    <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.3.1/hbase-client-1.3.1-sources.jar!/org/apache/hadoop/hbase/client/Put.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="153" column="13" selection-start-line="153" selection-start-column="13" selection-end-line="153" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Compile/src/org/apache/hadoop/hive/hbase/struct/HBaseStructValue.java" />
+    <entry file="file://$PROJECT_DIR$/HBase-Compile/HBase-Compile.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HBase-Compile/src/org/apache/hadoop/hive/hbase/struct/HBaseStructValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-436">
+          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -646,12 +654,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>weibo</last-edited>
+          <last-edited>HBase-Compile</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -659,6 +666,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
