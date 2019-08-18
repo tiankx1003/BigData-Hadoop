@@ -10,14 +10,8 @@
         <option value="$PROJECT_DIR$/etl/pom.xml" />
         <option value="$PROJECT_DIR$/MapReduce/pom.xml" />
         <option value="$PROJECT_DIR$/HBase/pom.xml" />
-        <option value="$PROJECT_DIR$/weibo/pom.xml" />
         <option value="$PROJECT_DIR$/weibo-0508/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/Hive/Flume/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

@@ -10,12 +10,11 @@
         <module name="mapreduce" />
         <module name="Flume" />
         <module name="weibo-err" />
-        <module name="weibo" />
         <module name="etl" />
-        <module name="weibo-0508" />
-        <module name="HBase" />
-        <module name="Kafka" />
         <module name="flume-0508" />
+        <module name="weibo-0508" />
+        <module name="Kafka" />
+        <module name="HBase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -29,7 +28,6 @@
       <module name="mapreduce" target="1.8" />
       <module name="weibo" target="1.8" />
       <module name="weibo-0508" target="1.8" />
-      <module name="weibo-err" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
