@@ -2,11 +2,12 @@ package com.tian.weibo.dao;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
-import org.apache.hadoop.hbase.client.Admin;
-import org.apache.hadoop.hbase.client.Connection;
-import org.apache.hadoop.hbase.client.ConnectionFactory;
+import org.apache.hadoop.hbase.client.*;
+import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 创建连接，实现数据库操作
@@ -55,7 +56,7 @@ public class WeiboDao {
      * @throws IOException
      */
     public void createTable(String tableName, String... families) throws IOException {
-        createTable(tableName,1,families);
+        createTable(tableName, 1, families);
     }
 
     /**
@@ -69,7 +70,7 @@ public class WeiboDao {
      */
     public void createTable(String tableName, int version, String... families) throws IOException {
         Admin admin = connection.getAdmin();
-        if(admin.tableExists(TableName.valueOf(tableName))){
+        if (admin.tableExists(TableName.valueOf(tableName))) {
             admin.close();
             return;
         }
@@ -82,4 +83,45 @@ public class WeiboDao {
         admin.createTable(tableDesc);
         admin.close();
     }
+
+    /**
+     * 插入数据
+     * 若干行与若干个值
+     * @param tableName 表名
+     * @param rowKeys   rowKey集合
+     * @param family    列族
+     * @param column    列名
+     * @param values    值集合
+     * @throws IOException
+     */
+    public void putCells(String tableName, List<String> rowKeys, String family, String column, String... values) throws IOException {
+        List<Put> puts = new ArrayList<>();
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        for (String rowKey : rowKeys) {
+            Put put = new Put(Bytes.toBytes(rowKey));
+            for (String value : values) {
+                put.addColumn(Bytes.toBytes(family), Bytes.toBytes(column), Bytes.toBytes(value));
+                puts.add(put);
+//                table.put(put); //可直接插入
+            }
+        }
+        table.put(puts);
+        table.close();
+    }
+
+    /**
+     *
+     * @param tableName
+     * @param rowKey
+     * @param family
+     * @param column
+     * @param values
+     * @throws IOException
+     */
+    public void putCells(String tableName, String rowKey, String family, String column, String... values) throws IOException {
+        List<String> rowKeys = new ArrayList<>();
+        rowKeys.add(rowKey);
+        putCells(tableName, rowKeys, family, column, values);
+    }
+
 }
