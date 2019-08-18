@@ -4,13 +4,17 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Flume/Flume.iml" filepath="$PROJECT_DIR$/Flume/Flume.iml" />
       <module fileurl="file://$PROJECT_DIR$/HBase/HBase.iml" filepath="$PROJECT_DIR$/HBase/HBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HBase-Compile/HBase-Compile.iml" filepath="$PROJECT_DIR$/HBase-Compile/HBase-Compile.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hive/Hive.iml" filepath="$PROJECT_DIR$/Hive/Hive.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kafka/Kafka.iml" filepath="$PROJECT_DIR$/Kafka/Kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Python/Python.iml" filepath="$PROJECT_DIR$/Python/Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scala/Scala.iml" filepath="$PROJECT_DIR$/Scala/Scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/etl/etl.iml" filepath="$PROJECT_DIR$/etl/etl.iml" />
       <module fileurl="file://$PROJECT_DIR$/flume-0508/flume-0508.iml" filepath="$PROJECT_DIR$/flume-0508/flume-0508.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-0508/kafka-0508.iml" filepath="$PROJECT_DIR$/kafka-0508/kafka-0508.iml" />
       <module fileurl="file://$PROJECT_DIR$/MapReduce/mapreduce.iml" filepath="$PROJECT_DIR$/MapReduce/mapreduce.iml" />
       <module fileurl="file://$PROJECT_DIR$/weibo/weibo.iml" filepath="$PROJECT_DIR$/weibo/weibo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weibo-0508/weibo-0508.iml" filepath="$PROJECT_DIR$/weibo-0508/weibo-0508.iml" />
     </modules>
   </component>
 </project>

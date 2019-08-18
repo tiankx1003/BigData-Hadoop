@@ -6,14 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="HBase" />
         <module name="mapreduce" />
         <module name="Flume" />
         <module name="weibo-err" />
         <module name="weibo" />
         <module name="etl" />
-        <module name="HBase" />
-        <module name="Kafka" />
+        <module name="weibo-0508" />
         <module name="flume-0508" />
+        <module name="Kafka" />
         <module name="kafka-0508" />
       </profile>
     </annotationProcessing>
@@ -28,7 +29,6 @@
       <module name="mapreduce" target="1.8" />
       <module name="weibo" target="1.8" />
       <module name="weibo-0508" target="1.8" />
-      <module name="weibo-err" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

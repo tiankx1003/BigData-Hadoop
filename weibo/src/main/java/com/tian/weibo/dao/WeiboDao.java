@@ -2,25 +2,25 @@ package com.tian.weibo.dao;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.*;
-import org.apache.hadoop.hbase.client.*;
-import org.apache.hadoop.hbase.util.Bytes;
+import org.apache.hadoop.hbase.client.Admin;
+import org.apache.hadoop.hbase.client.Connection;
+import org.apache.hadoop.hbase.client.ConnectionFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
+ * 创建连接，实现数据库操作
+ *
  * @author JARVIS
  * @version 1.0
- * 2019/8/16 10:23
+ * 2019/8/18 18:24
  */
 public class WeiboDao {
-    public static Connection connection = null;
+    private static Connection connection = null;
 
     static {
         try {
             Configuration conf = HBaseConfiguration.create();
-            conf.set("hadoop.zookeeper.quorum","hadoop101,hadoop102,hadoop103");
             connection = ConnectionFactory.createConnection(conf);
         } catch (IOException e) {
             e.printStackTrace();
@@ -29,15 +29,16 @@ public class WeiboDao {
 
     /**
      * 创建命名空间
+     * 通过异常判断命名空间是否存在
      *
-     * @param namespace
+     * @param namespace 命名空间
      * @throws IOException
      */
-    public void createNameSpace(String namespace) throws IOException {
+    public void createNamespace(String namespace) throws IOException {
         Admin admin = connection.getAdmin();
         try {
             admin.getNamespaceDescriptor(namespace);
-        } catch (NamespaceNotFoundException e) {//抛异常则不存在，然后再创建
+        } catch (NamespaceNotFoundException e) { //判断命名空间是否存在
             NamespaceDescriptor namespaceDesc = NamespaceDescriptor.create(namespace).build();
             admin.createNamespace(namespaceDesc);
         } finally {
@@ -47,60 +48,38 @@ public class WeiboDao {
 
     /**
      * 创建表
+     * 不含版本数设定
+     *
      * @param tableName
      * @param families
      * @throws IOException
      */
     public void createTable(String tableName, String... families) throws IOException {
-        createTable(tableName, 1, families);
+        createTable(tableName,1,families);
     }
 
-    public void createTable(String tableName, int versions, String... families) throws IOException {
+    /**
+     * 创建表
+     * 含版本数设定
+     *
+     * @param tableName
+     * @param version
+     * @param families
+     * @throws IOException
+     */
+    public void createTable(String tableName, int version, String... families) throws IOException {
         Admin admin = connection.getAdmin();
-        if (admin.tableExists(TableName.valueOf(tableName))) {
-            System.err.println("table " + tableName + " already exists!");
+        if(admin.tableExists(TableName.valueOf(tableName))){
             admin.close();
             return;
         }
         HTableDescriptor tableDesc = new HTableDescriptor(TableName.valueOf(tableName));
         for (String family : families) {
             HColumnDescriptor familyDesc = new HColumnDescriptor(family);
-            familyDesc.setMaxVersions(versions);
+            familyDesc.setMaxVersions(version);
             tableDesc.addFamily(familyDesc);
         }
         admin.createTable(tableDesc);
         admin.close();
-    }
-
-    public void putCell(String tableName, String rowKey, String family, String column, String value) throws IOException {
-        Table table = connection.getTable(TableName.valueOf(tableName));
-
-    }
-
-    public List<String> getRowKeysByPrefix(String tableName, String prefix) throws IOException {
-        List<String> rowKeys = new ArrayList<>();
-        Table table = connection.getTable(TableName.valueOf(tableName));
-        Scan scan = new Scan();
-        scan.setRowPrefixFilter(Bytes.toBytes(prefix));
-        ResultScanner scanner = table.getScanner(scan);
-        for (Result result : scanner) {
-            byte[] row = result.getRow();
-            rowKeys.add(Bytes.toString(row));
-        }
-        scanner.close();
-        table.close();
-        return rowKeys;
-    }
-
-    public void putCells(String tableName, List<String> rowKeys, String family, String column, String value) throws IOException {
-        if (rowKeys.size() == 0) return;
-        Table table = connection.getTable(TableName.valueOf(tableName));
-        List<Put> puts = new ArrayList<>();
-        for (String rowKey : rowKeys) {
-            Put put = new Put(Bytes.toBytes(rowKey));
-            put.addColumn(Bytes.toBytes(family), Bytes.toBytes(column), Bytes.toBytes(rowKey));
-        }
-        table.put(puts);
-        table.close();
     }
 }
