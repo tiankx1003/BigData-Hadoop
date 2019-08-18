@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="451ad812-7e72-497a-9a43-56e9dfbdd186" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/HBase/src/main/java/com/tian/hbase/split/CustomSplit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HBase/target/classes/com/tian/hbase/split/CustomSplit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapReduce/mapreduce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MapReduce/mapreduce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/etl/etl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/etl/etl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo-0508/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-0508/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/WeiboAPP.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/WeiboAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/WeiboApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/resources/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/target/classes/com/tian/weibo/WeiboAPP.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/target/classes/com/tian/weibo/constant/Names.class" beforeDir="false" />
@@ -98,7 +103,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="jdk.selected.PYTHON_MODULE" value="Python 3.7" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/weibo-0508/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -106,13 +112,14 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Git\BigData\weibo-0508\src\main\resources" />
+      <recent name="E:\Git\BigData\weibo\src\main\resources" />
       <recent name="E:\Git\BigData\HBase-Compile\src" />
       <recent name="E:\Git\BigData\Compile\src" />
-      <recent name="E:\Git\BigData\weibo\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -177,7 +184,10 @@
       <workItem from="1566119997427" duration="43000" />
       <workItem from="1566120053729" duration="32000" />
       <workItem from="1566120273452" duration="116000" />
+      <workItem from="1566121805130" duration="1244000" />
+      <workItem from="1566123098798" duration="5584000" />
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
