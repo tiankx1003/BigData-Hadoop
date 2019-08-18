@@ -23,4 +23,11 @@ public class WeiboService {
         dao.createTable(Names.TABLE_INBOX,Names.FAMILY_INBOX_INFO);
         dao.createTable(Names.TABLE_WEIBO,Names.FAMILY_WEIBO_INFO);
     }
+
+
+    public void follow(String fans, String star) {
+        //relation表中插入两条数据(关注与被关注)
+
+        //
+    }
 }

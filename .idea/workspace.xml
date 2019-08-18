@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="451ad812-7e72-497a-9a43-56e9dfbdd186" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBase/src/main/java/com/tian/hbase/split/CustomSplit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HBase/target/classes/com/tian/hbase/split/CustomSplit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapReduce/mapreduce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MapReduce/mapreduce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/etl/etl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/etl/etl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo-0508/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weibo-0508/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/WeiboAPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/WeiboApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/constant/Names.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/target/classes/com/tian/weibo/WeiboAPP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/target/classes/com/tian/weibo/constant/Names.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/target/classes/com/tian/weibo/controller/WeiboController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/target/classes/com/tian/weibo/dao/WeiboDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/target/classes/com/tian/weibo/service/WeiboService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weibo/weibo.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +163,7 @@
       <workItem from="1566120053729" duration="32000" />
       <workItem from="1566120273452" duration="116000" />
       <workItem from="1566121805130" duration="1244000" />
-      <workItem from="1566123098798" duration="5584000" />
+      <workItem from="1566123098798" duration="6744000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

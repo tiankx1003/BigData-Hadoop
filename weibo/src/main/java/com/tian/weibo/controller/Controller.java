@@ -2,6 +2,8 @@ package com.tian.weibo.controller;
 
 import com.tian.weibo.service.WeiboService;
 
+import java.io.IOException;
+
 /**
  * 具体功能层
  *
@@ -12,7 +14,14 @@ import com.tian.weibo.service.WeiboService;
 public class Controller {
     WeiboService service = new WeiboService();
     //初始化
-    public void init(){
+    public void init() throws IOException {
         service.init();
     }
+
+    //关注
+    public void follow(String fans,String star){
+        service.follow(fans,star);
+    }
+
+    //取关
 }

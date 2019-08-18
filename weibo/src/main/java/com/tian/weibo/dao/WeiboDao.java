@@ -58,10 +58,27 @@ public class WeiboDao {
         createTable(tableName,1,families);
     }
 
+    /**
+     * 创建表
+     * 含版本数设定
+     *
+     * @param tableName
+     * @param version
+     * @param families
+     * @throws IOException
+     */
     public void createTable(String tableName, int version, String... families) throws IOException {
         Admin admin = connection.getAdmin();
+        if(admin.tableExists(TableName.valueOf(tableName))){
+            admin.close();
+            return;
+        }
         HTableDescriptor tableDesc = new HTableDescriptor(TableName.valueOf(tableName));
-
+        for (String family : families) {
+            HColumnDescriptor familyDesc = new HColumnDescriptor(family);
+            familyDesc.setMaxVersions(version);
+            tableDesc.addFamily(familyDesc);
+        }
         admin.createTable(tableDesc);
         admin.close();
     }
