@@ -21,6 +21,7 @@ public class Names {
     //列名
     public static final String COLUMN_WEIBO_CONTENT = "content";
     public static final String COLUMN_RELATION_TIME = "time";
+    public static final String COLUMN_INBOX_WEIOBOID = "weiboId";
     //版本
     public static final Integer INBOX_VERSION = 3;
 }
