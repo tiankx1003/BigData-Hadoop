@@ -11,7 +11,7 @@ import java.io.IOException;
  * @version 1.0
  * 2019/8/18 18:28
  */
-public class Controller {
+public class WeiboController {
     WeiboService service = new WeiboService();
     //初始化
     public void init() throws IOException {
