@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="451ad812-7e72-497a-9a43-56e9dfbdd186" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/JARVIS.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/JARVIS.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/controller/WeiboController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/dao/WeiboDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/names/Names.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/names/Names.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weibo/src/main/java/com/tian/weibo/service/WeiboService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,7 +93,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -168,7 +171,7 @@
       <workItem from="1566182889676" duration="2038000" />
       <workItem from="1566189345075" duration="30000" />
       <workItem from="1566189387754" duration="115000" />
-      <workItem from="1566212575829" duration="1528000" />
+      <workItem from="1566212575829" duration="8557000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

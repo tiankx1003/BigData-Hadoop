@@ -87,6 +87,7 @@ public class WeiboDao {
     /**
      * 插入数据
      * 若干行与若干个值
+     *
      * @param tableName 表名
      * @param rowKeys   rowKey集合
      * @param family    列族
@@ -109,15 +110,6 @@ public class WeiboDao {
         table.close();
     }
 
-    /**
-     *
-     * @param tableName
-     * @param rowKey
-     * @param family
-     * @param column
-     * @param values
-     * @throws IOException
-     */
     public void putCells(String tableName, String rowKey, String family, String column, String... values) throws IOException {
         List<String> rowKeys = new ArrayList<>();
         rowKeys.add(rowKey);
@@ -127,7 +119,65 @@ public class WeiboDao {
     public List<String> getRowKeysByRange(String tableName, String startRow, String stopRow) throws IOException {
         List<String> rowKeyList = new ArrayList<>();
         Table table = connection.getTable(TableName.valueOf(tableName));
-        
+        Scan scan = new Scan(Bytes.toBytes(startRow), Bytes.toBytes(stopRow));
+        ResultScanner scanner = table.getScanner(scan);//获取多行传入Scan对象,返回值为类似于结果集
+        for (Result result : scanner) {
+            byte[] row = result.getRow();
+            rowKeyList.add(Bytes.toString(row));
+        }
+        scanner.close();
+        table.close();
         return rowKeyList;
+    }
+
+    public void deleteRow(String tableName, String rowKey) throws IOException {
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        Delete delete = new Delete(Bytes.toBytes(rowKey));
+        table.delete(delete);
+        table.close();
+    }
+
+    public void deleteColumn(String tableName, String rowKey, String family, String column) throws IOException {
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        Delete delete = new Delete(Bytes.toBytes(rowKey));
+        delete.addColumn(Bytes.toBytes(family), Bytes.toBytes(column));
+        table.delete(delete);
+        table.close();
+    }
+
+    public List<String> getRowKeysByPrefix(String tableName, String prefix) throws IOException {
+        List<String> rowKeyList = new ArrayList<>();
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        Scan scan = new Scan();
+        scan.setRowPrefixFilter(Bytes.toBytes(prefix));
+        ResultScanner scanner = table.getScanner(scan);
+        for (Result result : scanner) {
+            byte[] row = result.getRow();
+            rowKeyList.add(Bytes.toString(row));
+        }
+        table.close();
+        return rowKeyList;
+    }
+
+
+    /**
+     * 根据rowKey前缀获取数据
+     */
+    public List<String> getCellsByPrefix(String tableName, String prefix, String family, String column) throws IOException {
+        List<String> cellList = new ArrayList<>();
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        Scan scan = new Scan();
+        scan.setRowPrefixFilter(Bytes.toBytes(prefix));
+        scan.addColumn(Bytes.toBytes(family), Bytes.toBytes(column));
+        ResultScanner scanner = table.getScanner(scan);
+        for (Result result : scanner) {
+            Cell[] cells = result.rawCells();
+            for (Cell cell : cells) {
+                cellList.add(Bytes.toString(CellUtil.cloneValue(cell)));
+            }
+        }
+        scanner.close();
+        table.close();
+        return cellList;
     }
 }
