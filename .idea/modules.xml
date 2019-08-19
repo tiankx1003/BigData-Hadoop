@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Azkaban/Azkaban.iml" filepath="$PROJECT_DIR$/Azkaban/Azkaban.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BigData.iml" filepath="$PROJECT_DIR$/BigData.iml" />
       <module fileurl="file://$PROJECT_DIR$/Flume/Flume.iml" filepath="$PROJECT_DIR$/Flume/Flume.iml" />
       <module fileurl="file://$PROJECT_DIR$/HBase/HBase.iml" filepath="$PROJECT_DIR$/HBase/HBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/HBase-Compile/HBase-Compile.iml" filepath="$PROJECT_DIR$/HBase-Compile/HBase-Compile.iml" />

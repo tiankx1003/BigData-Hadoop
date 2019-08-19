@@ -20,7 +20,7 @@ public class WeiboController {
     }
 
     //关注
-    public void follow(String fans, String star) {
+    public void follow(String fans, String star) throws IOException {
         service.follow(fans, star);
     }
 

@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/HBase/pom.xml" />
         <option value="$PROJECT_DIR$/weibo-0508/pom.xml" />
         <option value="$PROJECT_DIR$/weibo/pom.xml" />
+        <option value="$PROJECT_DIR$/Azkaban/pom.xml" />
       </list>
     </option>
   </component>

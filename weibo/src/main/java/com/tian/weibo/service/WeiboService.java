@@ -34,8 +34,8 @@ public class WeiboService {
         String family = "info";
         String column = Names.COLUMN_RELATION_TIME;
         String time = System.currentTimeMillis() + "";
-        dao.putCell(tableName, rowKey1, family, column, time);
-        dao.putCell(tableName, rowKey2, family, column, time);
+        dao.putCells(tableName, rowKey1, family, column, time);
+        dao.putCells(tableName, rowKey2, family, column, time);
         //inbox表中插入数据，fans所关注的star所发的weibo
         //获取star发布的weiboid
 
