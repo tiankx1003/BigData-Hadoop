@@ -4,6 +4,7 @@ import com.tian.weibo.dao.WeiboDao;
 import com.tian.weibo.names.Names;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * 实现主要逻辑
@@ -37,7 +38,11 @@ public class WeiboService {
         dao.putCells(tableName, rowKey1, family, column, time);
         dao.putCells(tableName, rowKey2, family, column, time);
         //inbox表中插入数据，fans所关注的star所发的weibo
-        //获取star发布的weiboid
+        //获取star近期发布的weiboid，按范围获取
+        String startRow = star + "_";
+        String stopRow = star + "_|"; //设置范围要足够精确
+        List<String> rowKeyList = dao.getRowKeysByRange(Names.TABLE_WEIBO,startRow,stopRow);
+
 
     }
 }

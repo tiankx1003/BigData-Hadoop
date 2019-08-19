@@ -124,4 +124,10 @@ public class WeiboDao {
         putCells(tableName, rowKeys, family, column, values);
     }
 
+    public List<String> getRowKeysByRange(String tableName, String startRow, String stopRow) throws IOException {
+        List<String> rowKeyList = new ArrayList<>();
+        Table table = connection.getTable(TableName.valueOf(tableName));
+        
+        return rowKeyList;
+    }
 }
